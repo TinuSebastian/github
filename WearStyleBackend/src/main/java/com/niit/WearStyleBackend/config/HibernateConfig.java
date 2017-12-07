@@ -13,6 +13,8 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.niit.WearStyleBackend.model.Category;
+import com.niit.WearStyleBackend.model.Supplier;
 import com.niit.WearStyleBackend.model.User;
 
 
@@ -30,8 +32,9 @@ public class HibernateConfig
 	        
 	        sessionBuilder.addProperties(getHibernateProperties());
 	        sessionBuilder.addAnnotatedClass(User.class);
-	       
-	        
+	       sessionBuilder.addAnnotatedClass(Supplier.class);
+	       sessionBuilder.addAnnotatedClass(Category.class);
+	    
 	        return sessionBuilder.buildSessionFactory();
 	    }
 	    @Autowired

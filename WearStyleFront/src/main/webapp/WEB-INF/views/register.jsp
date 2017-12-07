@@ -7,6 +7,9 @@
 <title>Registration</title>
 </head>
 <body>
+
+<jsp:include page="header.jsp"></jsp:include>
+
 <h1>Registration</h1>
 <h2>${msg}</h2>
 
@@ -14,7 +17,10 @@
 <input type="text" name="mail" placeholder="Ener your mail id...."/><br/>
 <input type="text" name="password" placeholder="Ener your password..."/><br/>
 <input type="submit" value="SUBMIT"/><br/>
-
+<br/>
+<br/>
+<%-- 
+<jsp:include page="footer.jsp"></jsp:include> --%>
 
 </form>
 </body>

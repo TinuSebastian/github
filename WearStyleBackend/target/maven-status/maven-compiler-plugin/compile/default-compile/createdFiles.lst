@@ -1,0 +1,12 @@
+com\niit\WearStyleBackend\DAO\CategoryDao.class
+com\niit\WearStyleBackend\model\Supplier.class
+com\niit\WearStyleBackend\config\HibernateConfig.class
+com\niit\WearStyleBackend\DaoImpl\SupplierDaoImpl.class
+com\niit\WearStyleBackend\DaoImpl\UserDaoImpl.class
+com\niit\WearStyleBackend\model\Product.class
+com\niit\WearStyleBackend\DAO\UserDao.class
+com\niit\WearStyleBackend\DaoImpl\CategoryDaoImpl.class
+com\niit\WearStyleBackend\model\Category.class
+com\niit\WearStyleBackend\App.class
+com\niit\WearStyleBackend\DAO\SupplierDao.class
+com\niit\WearStyleBackend\model\User.class

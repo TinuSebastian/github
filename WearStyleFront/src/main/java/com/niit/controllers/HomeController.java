@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.niit.WearStyleBackend.DAO.CategoryDao;
 import com.niit.WearStyleBackend.DAO.UserDao;
 import com.niit.WearStyleBackend.model.User;
 
@@ -16,13 +17,20 @@ public class HomeController
 {
 	@Autowired
 	UserDao userdao;
+	@Autowired
+	CategoryDao cdao;
 	
 	@RequestMapping("/reg")
 	String registerPage(Model m)
 	{
-		m.addAttribute("msg", "This is Registration Page..............");
-		
+		m.addAttribute("clist", cdao.getCategorys());
 		return "register";
+	}
+	@RequestMapping("/")
+	String index(Model m)
+	{
+		m.addAttribute("clist", cdao.getCategorys());
+		return "index";
 	}
 	@RequestMapping("/mdemo")
 	ModelAndView modelandView()
